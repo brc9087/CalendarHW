@@ -10,7 +10,7 @@ Saved events will persist when refreshing or closing the browser.
 
 
 ## Usage / Directions
-* Click the link to start reading BookWorms! ==> https://fast-hollows-10985.herokuapp.com/
+* Click the link to start getting organized! ==> https://brc9087.github.io/DailyPlanner/
 
 ## HOME PAGE
 * ![](./images/homepage.PNG )
@@ -35,7 +35,8 @@ Saved events will persist when refreshing or closing the browser.
 * JQUERY
 * NPM NODE
 * Github
+* Moment JS
 
 ## Links
-* APP: https://fast-hollows-10985.herokuapp.com/
-* REPO: https://github.com/brc9087/googlebooksreact
+* APP: https://brc9087.github.io/DailyPlanner/
+* REPO: https://github.com/brc9087/DailyPlanner
