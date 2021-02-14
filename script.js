@@ -1,14 +1,17 @@
 $(document).ready(function () { 
     //define variables
-    var currentDayEl = $("#currentday");
+    var currentDayEl = $("#currentDay");
+    var currentTimeEl = $("#currentTime")
     var saveBtnEl = $(".saveBtn");
     var textAreaEl = $("textarea");
     var currentHour = parseInt(moment().format("H"));
-    var todaysDate = moment().format("ddd, " + "MMMM Do YYYY");
-    var plans = JSON.parse(localStorage.getItem("plans")) || [];
+    var todaysDate = moment().format("dddd, " + "MMMM Do YYYY");
+    var events = JSON.parse(localStorage.getItem("events")) || [];
 
     // Current Date display at the top 
-    currentDayEl.text(`${todaysDate}`)
+    currentDayEl.text(`${todaysDate}`);
+    currentTimeEl.text(`${currentHour}`)
+
 
     textAreaEl.each(function() {
         var nameAtt = parseInt($(this).attr("name"));
@@ -31,14 +34,14 @@ $(document).ready(function () {
             time: planTime
         };
 
-        plans.push(planOb);
+        events.push(planOb);
         
-        localStorage.setItem("plans", JSON.stringify(plans));
+        localStorage.setItem("events", JSON.stringify(events));
     });
 
-    for (var i = 0; i < plans.length; i++) {
-    var currentText = plans[i].text;
-    var currentTime = plans[i].time;
+    for (var i = 0; i < events.length; i++) {
+    var currentText = events[i].text;
+    var currentTime = events[i].time;
 
     $(`#${currentTime}`).val(currentText);
 }
