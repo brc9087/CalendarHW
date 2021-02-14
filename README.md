@@ -1,8 +1,11 @@
-# Google Books React
+# DAILY PLANNER
 
-* This is a React-based Google Books Search App. Applications has 2 pages that contain the following:
-1. A search page - where user can search for books via the Google Books API and render them here. User has the option to "View" a book, bringing them to the book on Google Books, or "Save" a book, saving it to the Mongo database.
-2. Saved Books Page ("My Library") - Renders all books saved to the Mongo database. User has an option to "View" the book, bringing them to the book on Google Books, or "Delete" a book, removing it from the Mongo database. 
+* When loading your app the current day will be displayed.
+The page will show all the timeblocks for a standard busness day.
+Each timeblock should be color coded to indicate whether it is in the past, present, or future.
+A user can enter an event by clicking on a timeblock.
+Saving an event is saved in local storage.
+Saved events will persist when refreshing or closing the browser.
 
 
 
@@ -10,34 +13,28 @@
 * Click the link to start reading BookWorms! ==> https://fast-hollows-10985.herokuapp.com/
 
 ## HOME PAGE
-* ![](./client/src/images/homepage.PNG )
+* ![](./images/homepage.PNG )
 
 <br>
 
-## SEARCH PAGE
-* ![](./client/src/images/search.PNG)
+## SAVING EVENTS
+* ![](./images/enteringinfo.PNG)
 
 <br>
-    
-    
-## SAVED BOOKS 
-*  ![](./client/src/images/savedbooks.PNG)
+
+## COLOR-CODED PAST, PRESENT, FUTRE
+* ![](./images/timecolors.PNG)
+
 
 <br>
 
 ## Tools Used / Dependancies
 --
-* React
-* react-router-dom
-* Third Party Hooks
-* Axios
-* Mongo DB
-* Mongoose
-* Express
-* Bootstrap
-* JS
+* HTML
+* CSS
+* JQUERY
+* NPM NODE
 * Github
-* Heroku
 
 ## Links
 * APP: https://fast-hollows-10985.herokuapp.com/
